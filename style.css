@@ -1,0 +1,265 @@
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    color: #f0f0d0;
+    padding-top: 80px;
+}
+
+
+nav {
+    background-color: #111;
+    padding: 15px 40px;
+    text-align: center; 
+    position: fixed;   
+    top: 0;            
+    left: 0;
+    width: 100%;
+    z-index: 1000;     
+}
+
+
+
+nav a {
+    color: #f0f0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c0b283; 
+    transform: scale(1.1);
+}
+
+
+
+header {
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding: 100px ;
+    color: #f0f0d0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #c0b283;
+    margin: 20px 0;
+}
+
+header h1:hover {
+    color: #d4c88a;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 24px;
+    color: #e0e0d1;
+}
+
+
+#promo-video {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0; 
+}
+#promo-video video {
+    width: 100%;          
+    max-height: 500px;    
+    object-fit: cover;    
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    display: block;
+    margin: 0 auto;
+}
+
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #c0b283;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    color: #e0e0d1;
+}
+
+
+#Services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #161613;
+    padding: 60px 20px;
+}
+
+#Services > div {
+    background-color: #262623;
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Services > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
+
+#pricing {
+    background-image: url('m.avif'); 
+    background-size: cover;         
+    background-position: center;     
+    background-repeat: no-repeat;   
+    padding: 80px 20px;
+    color: #000000;    
+
+}
+
+
+.subscription-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.subscription-card {
+    background: linear-gradient(145deg, #4a4a3a, #3f3f33);
+    border-radius: 15px;
+    padding: 25px 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(200,180,130,0.3);
+}
+
+.large-card {
+    width: 300px;
+}
+
+.subscription-card h3 {
+    color: #c0b283;
+    margin-bottom: 15px;
+}
+
+.subscription-card p {
+    color: #e0e0d1;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.subscription-card button {
+    padding: 12px 25px;
+    background-color: #556b2f;
+    color: #f0f0d0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.subscription-card button:hover {
+    background-color: #73875b;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+}
+
+.subscription-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
+
+footer {
+    background-color: #3a3a2f;
+    color: #f0f0d0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer .footer-content {
+    display: inline-block;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer a img {
+    width: 28px;   
+    height: 28px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2); 
+}
+
+
+
+@media (max-width: 768px) {
+    #Services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .large-card {
+        width: 95%;
+    }
+
+    #promo-video video {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}
+

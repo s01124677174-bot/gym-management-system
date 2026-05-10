@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quarterly Plan - FITSTORM</title>
+    <style>
+       
+         body {
+    padding-top: 70px; 
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    color: #f0f0d0;
+    background: url('head.avif') no-repeat center center fixed;
+    background-size: cover;
+    }
+
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0b0b0b;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: #f0f0d0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #c0b283; 
+            transform: scale(1.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #706d6d;
+            color: #302b2b;
+        }
+
+        .trainers-grid, .equipment-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .trainers-grid div, .equipment-grid div {
+    flex: 1 1 200px; 
+    max-width: 220px; 
+    text-align: center;
+    background: linear-gradient(145deg, #4a4a3a, #3f3f33);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainers-grid div:hover, .equipment-grid div:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
+.trainers-grid img, .equipment-grid img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+        .trainers-grid p, .equipment-grid p {
+            color: #e0e0d1;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #262623;
+            color: #f0f0d0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table th, table td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #3a3a2f;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #c0b283;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2f2f2f;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .trainers-grid, .equipment-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .trainers-grid div, .equipment-grid div {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Quarterly Plan</h1>
+        <p>$140 per 3 months – Includes personal training sessions</p>
+    </header>
+
+    <section>
+        <h2>Our Trainers</h2>
+        <div class="trainers-grid">
+            <div><img src="cosh 6.avif" alt="Trainer 1"><p>John Doe</p></div>
+            <div><img src="cosh 7.avif" alt="Trainer 2"><p>Jane Smith</p></div>
+            <div><img src="cosh 8.avif" alt="Trainer 3"><p>Mike Lee</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Available Equipment</h2>
+        <div class="equipment-grid">
+            <div><img src="a11.avif" alt="Treadmill"><p>Treadmill</p></div>
+            <div><img src="a12.avif" alt="Dumbbells"><p>Dumbbells</p></div>
+            <div><img src="a13.avif" alt="Elliptical"><p>Elliptical Machine</p></div>
+            <div><img src="a14.avif" alt="Barbells"><p>Barbells</p></div>
+            <div><img src="a15.avif" alt="Bench Press"><p>Bench Press</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Quarterly Training Schedule</h2>
+        <table>
+            <tr><th>Week</th><th>Activity</th></tr>
+            <tr><td>Week 1</td><td>Cardio + Strength</td></tr>
+            <tr><td>Week 2</td><td>Yoga + Core</td></tr>
+            <tr><td>Week 3</td><td>HIIT + Stretching</td></tr>
+            <tr><td>Week 4</td><td>Full Body Workout</td></tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitSTORM Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>

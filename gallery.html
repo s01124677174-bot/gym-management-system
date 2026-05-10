@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - FITSTORM</title>
+    <style>
+       
+        body {
+            padding-top: 70px; 
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            background-color: #2f2f2f;
+            color: #f0f0d0;
+        }
+
+        nav {
+            position: fixed;      
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0b0b0b;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: #f0f0d0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #c0b283; 
+            transform: scale(1.1);
+        }
+
+        header {
+            background-color: black;
+            color: #c0b283;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 24px;
+            color: #878769;
+        }
+
+        #gallery {
+            background-color: #191916;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        #gallery h2 {
+            margin-bottom: 40px;
+            color: #c0b283;
+        }
+
+        .equipment-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+       
+#equipment {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #2f2f2f;
+    color: #f0f0d0;
+}
+
+#equipment h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #c0b283;
+}
+
+
+.equipment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.equipment {
+    background: linear-gradient(145deg, #4a4a3a, #3f3f33);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(200,180,130,0.3);
+    width: 260px;     
+    height: 260px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.equipment img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.equipment p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0d0;
+    margin-top: 8px;
+}
+
+
+.equipment:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
+
+        footer {
+            background-color: #3a3a2f;
+            color: #f0f0d0;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: #f0f0d0;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #c0b283;
+        }
+
+        @media (max-width: 768px) {
+            .equipment-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .equipment {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>FITSTORM Gallery</h1>
+        <p>Check out our modern gym equipment!</p>
+    </header>
+
+    <section id="gallery">
+        <h2>Our Gym Equipment</h2>
+        <div class="equipment-grid">
+            <div class="equipment" onclick="window.open('treadmill.html','_blank')"><img src="a1.avif" alt="Treadmill"><p>Treadmill</p></div>
+            <div class="equipment" onclick="window.open('dumbbells.html','_blank')"><img src="a2.avif" alt="Dumbbells"><p>Dumbbells</p></div>
+            <div class="equipment" onclick="window.open('elliptical.html','_blank')"><img src="a3.avif" alt="Elliptical Machine"><p>Elliptical Machine</p></div>
+            <div class="equipment" onclick="window.open('barbells.html','_blank')"><img src="a4.avif" alt="Barbells"><p>Barbells</p></div>
+            <div class="equipment" onclick="window.open('benchpress.html','_blank')"><img src="a5.avif" alt="Bench Press"><p>Bench Press</p></div>
+            <div class="equipment" onclick="window.open('rowing.html','_blank')"><img src="a6.avif" alt="Rowing Machine"><p>Rowing Machine</p></div>
+            <div class="equipment" onclick="window.open('bike.html','_blank')"><img src="a7.avif" alt="Stationary Bike"><p>Stationary Bike</p></div>
+            <div class="equipment" onclick="window.open('pullup.html','_blank')"><img src="a8.avif" alt="Pull-up Bar"><p>Pull-up Bar</p></div>
+            <div class="equipment" onclick="window.open('kettlebells.html','_blank')"><img src="a9.avif" alt="Kettlebells"><p>Kettlebells</p></div>
+            <div class="equipment" onclick="window.open('legpress.html','_blank')"><img src="a10.avif" alt="Leg Press"><p>Leg Press Machine</p></div>
+            <div class="equipment" onclick="window.open('cablecrossover.html','_blank')"><img src="a11.avif" alt="Cable Crossover"><p>Cable Crossover</p></div>
+            <div class="equipment" onclick="window.open('latpulldown.html','_blank')"><img src="a12.avif" alt="Lat Pulldown"><p>Lat Pulldown Machine</p></div>
+            <div class="equipment" onclick="window.open('smith.html','_blank')"><img src="a13.avif" alt="Smith Machine"><p>Smith Machine</p></div>
+            <div class="equipment" onclick="window.open('abcrunch.html','_blank')"><img src="a14.avif" alt="Ab Crunch"><p>Ab Crunch Machine</p></div>
+            <div class="equipment" onclick="window.open('stepper.html','_blank')"><img src="a15.avif" alt="Stepper"><p>Stepper</p></div>
+            <div class="equipment" onclick="window.open('legcurl.html','_blank')"><img src="a16.avif" alt="Leg Curl"><p>Leg Curl Machine</p></div>
+            <div class="equipment" onclick="window.open('shoulderpress.html','_blank')"><img src="a17.avif" alt="Shoulder Press"><p>Shoulder Press</p></div>
+            <div class="equipment" onclick="window.open('pecdeck.html','_blank')"><img src="a18.avif" alt="Pec Deck"><p>Pec Deck</p></div>
+            <div class="equipment" onclick="window.open('abtwist.html','_blank')"><img src="a19.avif" alt="Ab Twist"><p>Ab Twist Machine</p></div>
+            <div class="equipment" onclick="window.open('rowingcable.html','_blank')"><img src="a20.avif" alt="Rowing Cable"><p>Rowing Cable Machine</p></div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 FitSTORM Gym. All rights reserved.</p>
+        <p>Follow us:
+            <a href="#"><img src="insta.png" alt="Instagram" width="24"></a>
+            <a href="#"><img src="face.png" alt="Facebook" width="24"></a>
+            <a href="#"><img src="tik tok.png" alt="TikTok" width="24"></a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

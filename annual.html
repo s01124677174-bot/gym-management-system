@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Annual Plan - FITSTORM</title>
+    <style>
+       body {
+            padding-top: 70px; 
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            color: #f5f5f5; 
+            background: url('ann.avif') no-repeat center center fixed;
+            background-size: cover; 
+        }
+
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.8);
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: #ffb347; 
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd580; 
+            transform: scale(1.1);
+        }
+
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.7);
+            color: #ffd580;
+        }
+
+        
+        .trainers-grid, .equipment-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+       .trainers-grid div, .equipment-grid div {
+    flex: 1 1 200px; 
+    max-width: 220px; 
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainers-grid div:hover, .equipment-grid div:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
+.trainers-grid img, .equipment-grid img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+        .trainers-grid p, .equipment-grid p {
+            color: #ffcc80; 
+            font-weight: bold;
+            margin: 0;
+        }
+
+        
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(0,0,0,0.75);
+            color: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table th, table td {
+            border: 1px solid #ffb347;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #ff8c42; 
+            color: #fff;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #ffd580;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0,0,0,0.85);
+            color: #ffd580;
+        }
+
+        @media (max-width: 768px) {
+            .trainers-grid, .equipment-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .trainers-grid div, .equipment-grid div {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Annual Plan</h1>
+        <p>$500 per year – Full access plus exclusive member benefits</p>
+    </header>
+
+    <section>
+        <h2>Our Trainers</h2>
+        <div class="trainers-grid">
+            <div><img src="cosh 1.avif" alt="Trainer 1"><p>John Doe</p></div>
+            <div><img src="cosh 2.avif" alt="Trainer 2"><p>Jane Smith</p></div>
+            <div><img src="cosh 3.avif" alt="Trainer 3"><p>Mike Lee</p></div>
+            <div><img src="cosh 4.avif" alt="Trainer 4"><p>Linda Kim</p></div>
+            <div><img src="cosh 5.avif" alt="Trainer 5"><p>Robert Brown</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Available Equipment</h2>
+        <div class="equipment-grid">
+            <div><img src="a1.avif" alt="Treadmill"><p>Treadmill</p></div>
+            <div><img src="a2.avif" alt="Dumbbells"><p>Dumbbells</p></div>
+            <div><img src="a3.avif" alt="Elliptical"><p>Elliptical Machine</p></div>
+            <div><img src="a4.avif" alt="Barbells"><p>Barbells</p></div>
+            <div><img src="a5.avif" alt="Bench Press"><p>Bench Press</p></div>
+            <div><img src="a6.avif" alt="Rowing Machine"><p>Rowing Machine</p></div>
+            <div><img src="a7.avif" alt="Stationary Bike"><p>Stationary Bike</p></div>
+            <div><img src="a8.avif" alt="Pull-up Bar"><p>Pull-up Bar</p></div>
+            <div><img src="a9.avif" alt="Kettlebells"><p>Kettlebells</p></div>
+            <div><img src="a10.avif" alt="Leg Press"><p>Leg Press Machine</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Annual Training Schedule</h2>
+        <table>
+            <tr><th>Month</th><th>Activity</th></tr>
+            <tr><td>January</td><td>Cardio + Strength</td></tr>
+            <tr><td>February</td><td>Yoga + Core</td></tr>
+            <tr><td>March</td><td>HIIT + Stretching</td></tr>
+            <tr><td>April</td><td>Full Body Workout</td></tr>
+            <tr><td>May</td><td>Weight Training</td></tr>
+            <tr><td>June</td><td>Endurance & Cardio</td></tr>
+            <tr><td>July</td><td>Flexibility & Yoga</td></tr>
+            <tr><td>August</td><td>HIIT + Core</td></tr>
+            <tr><td>September</td><td>Strength & Conditioning</td></tr>
+            <tr><td>October</td><td>Full Body Circuit</td></tr>
+            <tr><td>November</td><td>Functional Training</td></tr>
+            <tr><td>December</td><td>Recovery & Stretching</td></tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitSTORM Gym. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

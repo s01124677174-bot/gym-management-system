@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - FITSTORM</title>
+    <style>
+       
+        body {
+            padding-top: 70px; 
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            background: url('co 2.avif') no-repeat center center fixed;
+            background-size: cover;
+            color: #f0f0d0;
+        }
+
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(11,11,11,0.9);
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: #f0f0d0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #c0b283; 
+            transform: scale(1.1);
+        }
+
+        
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #c0b283;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 22px;
+            color: #e0e0d1;
+        }
+
+        
+        #Contact {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        #Contact p {
+            font-size: 18px;
+            margin: 10px 0;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        #Contact form {
+            display: inline-block;
+            background-color: rgba(70,70,50,0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            max-width: 500px;
+            width: 90%;
+            margin-top: 30px;
+        }
+
+        #Contact input,
+#Contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #c0b283; 
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #f0f0d0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#Contact input::placeholder,
+#Contact textarea::placeholder {
+    color: #d9d9c0; 
+    opacity: 0.8;
+}
+
+
+        #Contact button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #3f4538;
+            color: #a8a86d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #Contact button:hover {
+            background-color: #1b2212;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+        }
+
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            #Contact form {
+                width: 95%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    
+    <header>
+        <h1>Contact Us</h1>
+        <p>Reach out to FITSTORM Gym</p>
+    </header>
+
+    
+    <section id="Contact">
+        <p>Phone: 0123456789</p>
+        <p>Email: info@FITSTORM.com</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+
+</body>
+</html>
